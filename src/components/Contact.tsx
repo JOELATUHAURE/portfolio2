@@ -21,9 +21,9 @@ const Contact = () => {
     });
   };
 
-  const handleWhatsApp = () => {
-    window.open('https://wa.me/your-whatsapp-number', '_blank');
-  };
+ const handleWhatsApp = () => {
+  window.open('https://wa.me/+256767896471', '_blank');
+};
 
   return (
     <section id="contact" className="py-20">
@@ -50,7 +50,7 @@ const Contact = () => {
                 <strong className="text-gray-900 dark:text-white">Email:</strong> contact@jotek.com
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                <strong className="text-gray-900 dark:text-white">Phone:</strong> +256 XXX XXX XXX
+                <strong className="text-gray-900 dark:text-white">Phone:</strong> +256 767 896 471
               </p>
             </div>
           </div>
