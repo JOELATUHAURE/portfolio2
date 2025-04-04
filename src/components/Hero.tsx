@@ -41,18 +41,19 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
-              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
-                <img
-                 src="/portfolio-image.png"
-                  alt="Atuhaire Joel"
-                  className="w-full h-full object-cover rounded-full transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
+     <div className="lg:w-1/2 flex justify-center">
+  <div className="relative group mt-6">  {/* Added margin-top here */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
+    <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+      <img
+        src="/portfolio-image.png"
+        alt="Atuhaire Joel"
+        className="w-full h-full object-cover rounded-full transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-110"
+      />
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
