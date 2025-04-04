@@ -2,9 +2,10 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  const handleWhatsApp = () => {
-    window.open('https://wa.me/+256767896471', '_blank');
+const handleGetQuote = () => {
+    window.open('https://+256767896471', '_blank');
   };
+
 
   return (
     <section id="home" className="pt-20 lg:pt-24 relative overflow-hidden">
@@ -25,14 +26,13 @@ const Hero = () => {
               graphics design, and system administration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-          <button
-  onClick={handleWhatsApp}  // Updated the function reference here
-  className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
->
-  <Send className="w-5 h-5" />
-  Get a Free Quote on WhatsApp
-</button>
-
+              <button
+                onClick={handleGetQuote}
+                className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Get a Free Quote
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
               <a
                 href="#projects"
                 className="group px-8 py-3 bg-white dark:bg-gray-800 border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-700 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
@@ -42,18 +42,18 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
-            <div className="relative group mt-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
-              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
-                <img
-                  src="/portfolio-image.png"
-                  alt="Atuhaire Joel"
-                  className="w-full h-full object-cover rounded-full transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
+     <div className="lg:w-1/2 flex justify-center">
+  <div className="relative group mt-6">  {/* Added margin-top here */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
+    <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+      <img
+        src="/portfolio-image.png"
+        alt="Atuhaire Joel"
+        className="w-full h-full object-cover rounded-full transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-110"
+      />
+    </div>
+  </div>
+</div>
 
         </div>
       </div>
