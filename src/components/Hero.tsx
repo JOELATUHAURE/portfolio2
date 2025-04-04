@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
 const handleGetQuote = () => {
-    window.open('https://+256767896471', '_blank');
+window.open('https://wa.me/+256767896471', '_blank');
   };
 
 
