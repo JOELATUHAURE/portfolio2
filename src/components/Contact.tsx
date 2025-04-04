@@ -21,9 +21,9 @@ const Contact = () => {
     });
   };
 
- const handleWhatsApp = () => {
-  window.open('https://wa.me/+256767896471', '_blank');
-};
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/+256767896471', '_blank');
+  };
 
   return (
     <section id="contact" className="py-20">
