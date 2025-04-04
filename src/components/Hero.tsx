@@ -59,12 +59,13 @@ const Hero = () => {
               </div>
 
               {/* Pop-Out Effect */}
-              <img
-                src="/images/portfolio-image.png" // Ensure correct image path
-                alt="Atuhaire Joel"
-                className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6 scale-110 drop-shadow-2xl"
-                style={{ clipPath: "inset(20% 0 0 0)" }} // Allows part of the image to extend outside the circle
-              />
+          <img
+  src="/portfolio-image.png"  // ✅ Correct path now
+  alt="Atuhaire Joel"
+  className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6 scale-110 drop-shadow-2xl"
+  style={{ clipPath: "inset(20% 0 0 0)" }} // Allows part of the image to extend outside the circle
+/>
+
             </div>
           </div>
         </div>
