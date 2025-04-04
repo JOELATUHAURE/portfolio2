@@ -25,13 +25,14 @@ const Hero = () => {
               graphics design, and system administration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={handleWhatsApp}  {/* Updated the function reference here */}
-                className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-              >
-                Get a Free Quote
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+          <button
+  onClick={handleWhatsApp}  // Updated the function reference here
+  className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+>
+  <Send className="w-5 h-5" />
+  Get a Free Quote on WhatsApp
+</button>
+
               <a
                 href="#projects"
                 className="group px-8 py-3 bg-white dark:bg-gray-800 border-2 border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-700 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
