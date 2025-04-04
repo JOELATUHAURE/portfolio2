@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import myImage from '../images/portfolio-image.png'; // Import your local image
 
 const Hero = () => {
   const handleGetQuote = () => {
@@ -10,8 +9,11 @@ const Hero = () => {
   return (
     <section id="home" className="pt-20 lg:pt-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950 dark:to-purple-950 -z-10" />
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzNzQxNTEiIGZpbGwtb3BhY2l0eT0iMC4wMSI+PHBhdGggZD0iTTM2IDM0aDR2NEgzNnpNNDAgMzBoNHY0aC00ek00MCAzNGg0djRoLTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between py-20">
+          {/* Left Section */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-20 animate-pulse" />
@@ -41,32 +43,30 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Circular Clipped Image with Pop-Out Effect */}
+          {/* Right Section - Profile Image with Pop-Out Effect */}
           <div className="lg:w-1/2 flex justify-center">
-            <div className="relative w-64 h-64 lg:w-96 lg:h-96">
-              {/* Circular Mask */}
-              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
+            <div className="relative group w-64 h-64 lg:w-96 lg:h-96">
+              {/* Glowing Background */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow-xl"></div>
+
+              {/* Circular Clipped Mask */}
+              <div className="absolute inset-0 rounded-full overflow-hidden">
                 <img
-                  src={myImage}
+                  src="/images/portfolio-image.png" // Make sure this is correctly placed in your repo
                   alt="Atuhaire Joel"
-                  className="w-full h-full object-cover transform scale-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Pop-Out Effect */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <img
-                  src={myImage}
-                  alt="Atuhaire Joel"
-                  className="w-40 lg:w-48 shadow-lg rounded-lg transition-all duration-500 ease-in-out hover:scale-110"
-                  style={{
-                    clipPath: 'inset(0% 0% 30% 0%)', // Only top part is visible outside the circle
-                  }}
-                />
-              </div>
+              <img
+                src="/images/portfolio-image.png" // Ensure correct image path
+                alt="Atuhaire Joel"
+                className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6 scale-110 drop-shadow-2xl"
+                style={{ clipPath: "inset(20% 0 0 0)" }} // Allows part of the image to extend outside the circle
+              />
             </div>
           </div>
-          
         </div>
       </div>
     </section>
