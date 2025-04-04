@@ -41,18 +41,27 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image with 3D Pop-Out Effect */}
+          {/* Circular Clipped Image with Pop-Out Effect */}
           <div className="lg:w-1/2 flex justify-center">
-            <div className="relative group">
-              {/* Glowing Background */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
-              
-              {/* Image Wrapper */}
-              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-2">
+            <div className="relative w-64 h-64 lg:w-96 lg:h-96">
+              {/* Circular Mask */}
+              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <img
                   src={myImage}
                   alt="Atuhaire Joel"
-                  className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg shadow-indigo-500/50"
+                  className="w-full h-full object-cover transform scale-110"
+                />
+              </div>
+
+              {/* Pop-Out Effect */}
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <img
+                  src={myImage}
+                  alt="Atuhaire Joel"
+                  className="w-40 lg:w-48 shadow-lg rounded-lg transition-all duration-500 ease-in-out hover:scale-110"
+                  style={{
+                    clipPath: 'inset(0% 0% 30% 0%)', // Only top part is visible outside the circle
+                  }}
                 />
               </div>
             </div>
