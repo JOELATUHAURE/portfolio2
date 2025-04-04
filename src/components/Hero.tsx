@@ -2,9 +2,9 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  const handleGetQuote = () => {
-    window.open('https://wa.me/your-whatsapp-number', '_blank');
-  };
+ const handleWhatsApp = () => {
+  window.open('https://wa.me/+256767896471', '_blank');
+};
 
   return (
     <section id="home" className="pt-20 lg:pt-24 relative overflow-hidden">
