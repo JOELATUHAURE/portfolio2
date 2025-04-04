@@ -48,26 +48,20 @@ const Hero = () => {
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative group w-64 h-64 lg:w-96 lg:h-96">
               
-              {/* Glowing Background */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow-xl animate-pulse"></div>
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow-2xl blur-lg animate-pulse"></div>
 
-              {/* Circular Clipped Mask */}
-              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-indigo-500 dark:border-indigo-400">
+              {/* Single Image with 3D Pop-Out Effect */}
+              <div className="relative rounded-full overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 transform group-hover:scale-110 transition-all duration-300">
                 <img
-                  src="/portfolio-image.png" // Ensure this is in the public folder
+                  src="/portfolio-image.png"
                   alt="Atuhaire Joel"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full shadow-xl transform scale-110 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-out"
                 />
               </div>
-
-              {/* Pop-Out Effect */}
-              <img
-                src="/portfolio-image.png"
-                alt="Atuhaire Joel"
-                className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-125 drop-shadow-2xl"
-              />
             </div>
           </div>
+
         </div>
       </div>
     </section>
