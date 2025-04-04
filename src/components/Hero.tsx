@@ -48,13 +48,14 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
               
               {/* Image Wrapper */}
-              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-2">
-                <img
-                  src={myImage}
-                  alt="Atuhaire Joel"
-                  className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg shadow-indigo-500/50"
-                />
-              </div>
+             <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-2">
+  <img
+    src={myImage}
+    alt="Atuhaire Joel"
+    className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg shadow-indigo-500/50 transform translate-y-6"
+  />
+</div>
+
             </div>
           </div>
           
