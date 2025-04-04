@@ -46,7 +46,7 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
               <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=500"
+                 src={require('../../images/portfolio-image.png')}
                   alt="Atuhaire Joel"
                   className="w-full h-full object-cover rounded-full transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-110"
                 />
