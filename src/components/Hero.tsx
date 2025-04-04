@@ -44,21 +44,19 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Section - Profile Image with Pop-Out Effect */}
+          {/* Right Section - Image with Glowing Effect */}
           <div className="lg:w-1/2 flex justify-center">
-            <div className="relative group w-64 h-64 lg:w-96 lg:h-96">
+            <div className="relative w-64 h-64 lg:w-96 lg:h-96">
               
-              {/* Outer Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow-2xl blur-lg animate-pulse"></div>
+              {/* Glowing Background Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl blur-2xl opacity-50 animate-pulse"></div>
 
-              {/* Single Image with 3D Pop-Out Effect */}
-              <div className="relative rounded-full overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 transform group-hover:scale-110 transition-all duration-300">
-                <img
-                  src="/portfolio-image.png"
-                  alt="Atuhaire Joel"
-                  className="w-full h-full object-cover rounded-full shadow-xl transform scale-110 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-out"
-                />
-              </div>
+              {/* Actual Image */}
+              <img
+                src="/portfolio-image.png"
+                alt="Atuhaire Joel"
+                className="relative w-full h-full object-cover rounded-xl shadow-2xl"
+              />
             </div>
           </div>
 
